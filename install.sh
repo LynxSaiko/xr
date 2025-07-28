@@ -24,6 +24,6 @@ cmake -D CMAKE_BUILD_TYPE=Release     \
       -D ENABLE_SPEECH_SYNTHESIS=OFF  \
       -D USE_GSTREAMER_TRANSCODER=OFF \
       -W no-dev -G Ninja ..           &&
-ninja -$(nproc)
+ninja -j$(nproc)
 ninja install
 
