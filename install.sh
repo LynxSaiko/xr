@@ -22,6 +22,7 @@ cmake -D CMAKE_BUILD_TYPE=Release     \
       -D ENABLE_BUBBLEWRAP_SANDBOX=ON \
       -D USE_SYSPROF_CAPTURE=NO       \
       -D ENABLE_SPEECH_SYNTHESIS=OFF  \
+      -D USE_GSTREAMER_TRANSCODER=OFF \
       -W no-dev -G Ninja ..           &&
 ninja -$(nproc)
 ninja install
