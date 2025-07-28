@@ -1,4 +1,5 @@
 #!/bin/bash
+export PKG_CONFIG_PATH=/usr/lib/pkgconfig:/usr/share/pkgconfig
 wget https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.1.tar.xz
 tar -xf glib-networking-2.80.1.tar.xz
 cd glib-networking-2.80.1
